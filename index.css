@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after{
+    margin : 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.container{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.container ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.container ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #4d8480;
+}
+
+.main_div{
+    width:100%;
+    height:100%;
+    display:grid;
+    background-color:white;
+    place-items: center;
+}
+
+.content{
+    width: 18rem;
+    height: 25rem;
+    background-color:hsl(67, 20%, 92%);
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 1.2rem 3rem 0.5rem;
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+   
+h3{
+    letter-spacing: 0.1rem;;
+    justify-content: space-between;
+    font-size:20px;
+    color:rgb(126, 124, 124);
+}
+
+h4{
+    text-align:center;
+    letter-spacing:0.1rem;
+    justify-content: space-between;
+    font-size:25px;
+    color:rgb(13, 61, 25);
+    padding:2px;
+}
+
+
+
+img{
+    padding:2px;
+    margin-top:19px;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    align-items: center;
+}
+
+
+.music_controls{
+    width:20rem;
+    display:flex;
+    justify-content: space-between;
+    padding:50px;
+    margin:auto;
+    margin-top:-0px;    
+    margin-left:-65px;
+    align-content: center;
+    
+}
+
+.music_controls .fas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#111111;
+    font-size:1rem;
+    cursor:pointer;
+    filter:drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4))
+}
+
+.music_controls .main_button{
+    width:2.7rem;
+    height:2.7rem;
+    border-radius:50%;
+    background-color:#111111;
+    color:#f6f6f6;
+    font-size:1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music_controls .fas:hover{
+    color: grey;
+}
+
+
+
+.music_controls .fa-play:hover{
+    background-color: #f6f6f6;
+    color:#111111;
+    box-shadow: 0 0.2rem 3rem 0.2rem;
+}
+.anime{
+    animation: mymove 3s linear infinite;
+}
+
+@keyframes mymove {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
